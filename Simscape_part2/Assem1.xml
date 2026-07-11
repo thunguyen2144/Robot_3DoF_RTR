@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="11/22/25||10:59:46" using="Simscape Multibody Link Version 7.4" from="SolidWorks 30.0.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Assem2" uid="Assem2" version="154">
+<AssemblyFile name="Assem2.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="De-1" uid="De-1" grounded="true" entityUid="De*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="khau33-2" uid="khau33-2" entityUid="khau33*:*Default">
+<Transform>
+<Rotation>0.99982285783277369 -0.018821608727887851 0 0.018821608727887851 0.99982285783277369 0 0 0 1</Rotation>
+<Translation>0.061778184337307737 0.19361299881455485 0.0029999999999998648</Translation>
+</Transform>
+</Instance>
+<Instance name="Khau111-1" uid="Khau111-1" entityUid="Khau111*:*Default">
+<Transform>
+<Rotation>-0.23723466303914661 2.0084926676124055e-15 0.97145237384686167 0.97145237384686178 2.1047348445657681e-16 0.23723466303914659 2.720191151104632e-16 0.99999999999999989 -2.0010865759698183e-15</Rotation>
+<Translation>0 0.055000000000000042 0.0019999999999999515</Translation>
+</Transform>
+</Instance>
+<Instance name="Khau22-2" uid="Khau22-2" entityUid="Khau22*:*Default">
+<Transform>
+<Rotation>-0.23723466303914303 -0.97145237384686256 2.0902442793171271e-15 0.97145237384686245 -0.23723466303914301 -1.2429124275050413e-16 6.1662142009164512e-16 2.0010865759698139e-15 0.99999999999999978</Rotation>
+<Translation>0.061778184337307439 0.19361299881455493 0.0029999999999997585</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Coincident name="Coincident1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>De-1</Uid>
+</InstancePath>
+<Position>0.040000000000000001 0.083000000000000004 0.002</Position>
+<Axis>-1.2468324983583299e-16 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Khau111-1</Uid>
+</InstancePath>
+<Position>0.095000000000000029 0 -0.020000000000000011</Position>
+<Axis>0 0.99999999999999989 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric1">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>De-1</Uid>
+</InstancePath>
+<Position>0 0.055 0.002</Position>
+<Axis>1.2468324983583299e-16 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Khau111-1</Uid>
+</InstancePath>
+<Position>0 -0.0049999999999999984 0</Position>
+<Axis>0 0.99999999999999989 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Khau111-1</Uid>
+</InstancePath>
+<Position>0.13000000000000006 -0.011499999999999157 0.14000000000000004</Position>
+<Axis>3.4694469519536146e-15 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Khau22-2</Uid>
+</InstancePath>
+<Position>0.010000000000000009 -0.015000999999999987 -0.012499999999999995</Position>
+<Axis>0 -1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric6">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Khau111-1</Uid>
+</InstancePath>
+<Position>0.11000000000000004 -0.011499999999999257 0.14000000000000004</Position>
+<Axis>3.4694469519536146e-15 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Khau22-2</Uid>
+</InstancePath>
+<Position>-0.010000000000000009 -0.015000999999999987 -0.012499999999999995</Position>
+<Axis>0 -1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident4">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Khau22-2</Uid>
+</InstancePath>
+<Position>-0.022499999999999964 0.014999999999999999 0</Position>
+<Axis>0 0 0.99999999999999978</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>khau33-2</Uid>
+</InstancePath>
+<Position>0.10500000000000002 0.014999999999999958 0</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric8">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Khau22-2</Uid>
+</InstancePath>
+<Position>0 0 -0.0049999999999999975</Position>
+<Axis>0 0 -0.99999999999999978</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>khau33-2</Uid>
+</InstancePath>
+<Position>0 0 0.027269766663492599</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="De" uid="De*:*Default" version="117">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="De.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.086767004685520899</Mass>
+<CenterOfMass>-0.0018694892048086646 0.021972657268923557 0.00095455151615341633</CenterOfMass>
+<Inertia>9.3899604282705854e-05 0.00015061274565863003 0.00010079191606775695 -3.8604988332323149e-06 3.0820585617015831e-07 3.6599902323111489e-06</Inertia>
+</MassProperties>
+<GeometryFile name="De_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="1" g="0.93333333333333335" b="0.13333333333333333" a="1"/>
+<Diffuse r="1" g="0.93333333333333335" b="0.13333333333333333" a="1"/>
+<Specular r="0.5" g="0.46666666666666667" b="0.066666666666666666" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Khau111" uid="Khau111*:*Default" version="116">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Khau111.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.11880028672702457</Mass>
+<CenterOfMass>0.076430546233395069 -0.01031632837522029 0.041146881111237321</CenterOfMass>
+<Inertia>0.00030118544658464251 0.00050139338171232412 0.00021023815133305691 5.7861046802409085e-06 -0.00015788072110742635 7.1625727446457992e-06</Inertia>
+</MassProperties>
+<GeometryFile name="Khau111_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.92549019607843142" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.92549019607843142" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46274509803921571" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Khau22" uid="Khau22*:*Default" version="116">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Khau22.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.023861405249456114</Mass>
+<CenterOfMass>0 0 -0.0128729671822154</CenterOfMass>
+<Inertia>3.2154091587236267e-06 5.3573072959333289e-06 5.8247961526254425e-06 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Khau22_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.92941176470588238" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.92941176470588238" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46470588235294119" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="khau33" uid="khau33*:*Default" version="122">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="khau33.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.030379632782661155</Mass>
+<CenterOfMass>0.050857908210314544 7.4781223601374812e-08 0.0094224768833561425</CenterOfMass>
+<Inertia>5.1060159352807836e-06 3.1785602209473391e-05 3.318953813300987e-05 1.8756140674390853e-11 -2.2022053130132209e-06 1.0976062166639873e-10</Inertia>
+</MassProperties>
+<GeometryFile name="khau33_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.69411764705882351" g="0.090196078431372548" b="0.090196078431372548" a="1"/>
+<Diffuse r="0.69411764705882351" g="0.090196078431372548" b="0.090196078431372548" a="1"/>
+<Specular r="0.34705882352941175" g="0.045098039215686274" b="0.045098039215686274" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
