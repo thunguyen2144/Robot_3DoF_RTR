@@ -1,122 +1,131 @@
 # Robot_3DoF_RTR
 
-Design and simulation of a 3-DOF RTR serial robotic manipulator using MATLAB/Simulink. This project covers robot kinematics, trajectory planning, dynamics modeling, and closed-loop trajectory tracking control.
+Design and simulation of a 3-DOF RTR serial robot controller using MATLAB/Simulink. This project includes robot kinematics, trajectory planning, dynamic modeling, and closed-loop trajectory tracking control.
 
 ---
 
 ## Overview
 
-This project presents the complete design and simulation workflow of a **3-DOF RTR (Revolute–Translational–Revolute)** serial manipulator.
+This project presents the complete design and simulation process of a **3-DOF RTR (Rotation – Translation – Rotation)** serial robot controller.
 
-The work includes:
+Job content includes:
 
 - Forward and inverse kinematics
-- Differential kinematics using the Jacobian matrix
+- Differential kinematics using Jacobian matrices
 - Trapezoidal velocity trajectory planning
 - Geometric obstacle avoidance
-- Dynamic modeling using Lagrange's formulation
+- Dynamic modeling using Lagrange's formulas
 - PD controller with gravity compensation
-- MATLAB/Simulink and Simscape simulations
-- Mechanical design in SolidWorks
+- MATLAB/Simulink and Simscape simulation
+- Mechanical design in SolidWorks for Simscape simulation purposes
 
 ---
-
 ## Features
 
-- ✔ Forward Kinematics
-- ✔ Inverse Kinematics
-- ✔ Jacobian-based Velocity Kinematics
-- ✔ Trapezoidal Velocity Profile
-- ✔ Obstacle Avoidance
-- ✔ Lagrange Dynamic Model
-- ✔ PD + Gravity Compensation Controller
-- ✔ MATLAB/Simulink Simulation
-- ✔ Simscape Physical Modeling
-- ✔ SolidWorks CAD Model
+- ✔ Forward kinematics
 
----
+- ✔ Inverse kinematics
 
-## Repository Structure
+- ✔ Velocity kinematics based on Jacobian matrices
+
+- ✔ Trapezoidal velocity profile
+- ✔ Obstacle avoidance
+- ✔ Lagrange dynamic modeling
+- ✔ PD controller + gravity compensation
+
+- ✔ MATLAB/Simulink + Simscape simulation
+- ✔ SolidWorks CAD modeling for Simscape
+
+--- ## Structure Repository bamboo
 
 ```
 Robot_3DoF_RTR
 │
 ├── README.md
-├── Solid/                 # SolidWorks CAD models
-├── Simscape_part2/        # Simscape models
-├── Simsc_DLH/             # Dynamic simulations
-├── solid_RTR/             # Mechanical design files
-├── PD+G/                  # Controller implementation
-├── PP_Daiso/              # Trajectory planning
-├── PP_Hinhhoc/            # Geometric planning
-├── ne_vat_can/            # Obstacle avoidance
-├── thietke/               # Mechanical design resources
-├── tinhtoan.m             # MATLAB calculations
+├── Simsc_DLH/ # Dynamics Simulation + Simscape
+├── PD+G/ # Controller Implementation
+├── PP_Daiso/ # Forward Kinematics + Inverse Kinematics using Algebraic Methods
+├── PP_Hinhhoc/ # Forward Kinematics + Inverse Kinematics using Geometric Methods
+├── ne_vat_can/ # Obstacle Avoidance
+├── thietke/ # Mechanical Design Resources
+├── tinhtoan.m # MATLAB Calculations
 └── ...
+
 ```
 
 ---
-
 ## Software Requirements
 
 - MATLAB R2023a or later
 - Simulink
+
 - Simscape Multibody
+
 - SolidWorks (optional)
 
 ---
-
 ## Simulation Modules
 
 ### Kinematics
 
 - Forward Kinematics
+
 - Inverse Kinematics
+
 - Jacobian Matrix
+
 - Differential Kinematics
 
 ### Trajectory Planning
 
 - Trapezoidal Velocity Profile
 - Smooth Motion Planning
+
 - Cartesian Path Planning
 
 ### Dynamics
 
-Robot dynamics are formulated using the Lagrange equation:
+The robot's dynamics are constructed using the Lagrange equation:
 
 \[
 M(q)\ddot q + C(q,\dot q)\dot q + g(q)=u
+
 \]
 
 ### Control
 
-The robot uses a **PD controller with gravity compensation**
+The robot uses a **gravity-compensated PD controller**
 
 \[
 u=K_p(q_d-q)+K_d(\dot q_d-\dot q)+g(q)
+
 \]
 
 ---
-
 ## Results
 
-The simulations demonstrate:
+Simulations demonstrate:
 
-- Accurate forward and inverse kinematics
-- Smooth trajectory generation
-- Stable trajectory tracking
-- Dynamic response under closed-loop control
-- Successful obstacle avoidance
+- Forward Kinematics and precise inversion
+
+- Creates smooth trajectories
+
+- Tracks stable trajectories
+
+- Dynamic feedback under closed-loop control
+
+- Successfully avoids geometric obstacles
 
 ---
 
 ## Applications
 
 - Robotics Education
-- Industrial Manipulators
+
 - Motion Planning
-- Robot Dynamics
+
+- Robotics Dynamics
+
 - MATLAB/Simulink Learning
 
 ---
@@ -128,7 +137,3 @@ The simulations demonstrate:
 Mechatronics Engineering Student
 
 ---
-
-## License
-
-This project is intended for educational and research purposes.
